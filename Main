@@ -1,0 +1,10 @@
+#include<bits/stdc++.h>
+using namespace std;
+  
+int getNextGap(int gap)
+{
+    gap = (gap*10)/13;
+    if (gap < 1)
+        return 1;
+    return gap;
+}
