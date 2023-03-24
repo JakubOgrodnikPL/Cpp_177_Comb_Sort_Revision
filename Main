@@ -4,12 +4,9 @@ using namespace std;
 int getNextGap(int gap)
 {
     gap = (gap*10)/13;
-    if (gap < 1)
-        return 1;
+    if (gap < 1) return 1;
     return gap;
 }
-
-
 
 void Sort(int a[], int n)
 {
@@ -30,22 +27,14 @@ void Sort(int a[], int n)
     }
 }
 
-
-
-
-
-
 int main()
 {
     int a[] = {3, 21, 11, 76, 35, -12, 2, -1, 29, 10};
-    
-    // int n = sizeof(a)/sizeof(a[0]);
-  
     Sort(a, n);
-  
     printf("Sorted array: \n");
     for (int i=0; i<n; i++)
+    {
         printf("%d ", a[i]);
-  
+    }
     return 0;
 }
